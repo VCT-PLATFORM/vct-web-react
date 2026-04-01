@@ -1,0 +1,16 @@
+/* 
+  VCT PLATFORM DESIGN SYSTEM — V5.0
+  Master stylesheet: imports all modules.
+  DO NOT add styles here — use the appropriate module file.
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Outfit:wght@300;400;500;600;700&family=Lora:ital,wght@0,500;0,600;0,700;1,500&display=swap');
+
+@import url('./_variables.css');
+@import url('./_base.css');
+@import url('./_navbar.css');
+@import url('./_hero.css');
+@import url('./_modules.css');
+@import url('./_footer.css');
+@import url('./_components.css');
+@import url('./_responsive.css');

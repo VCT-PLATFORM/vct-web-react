@@ -1,0 +1,43 @@
+/* VCT Design System — Variables & Tokens */
+/* 
+  VCT PLATFORM DESIGN SYSTEM
+  Version: 5.1
+  Theme: Deep Slate, Teal/Emerald Accent, Light Blue Highlight
+*/
+
+:root {
+  /* Colors */
+  /* Premium Neo-Glassmorphism Palette */
+  --bg-dark: #0f172a; /* Slate Dark / Deep Blue Grey */
+  --bg-nav: rgba(15, 23, 42, 0.7);
+  
+  --accent-primary: #14b8a6; /* Premium Emerald/Teal */
+  --accent-glow: rgba(20, 184, 166, 0.4);
+  --accent-secondary: #0d9488;
+  
+  --cyan-accent: #06B6D4; /* Unified Cyber Cyan — matches all inline HTML */
+  --cyan-glow: rgba(6, 182, 212, 0.4);
+  
+  --bg-deep: #020617; /* Deep Slate — used in solution pages */
+  
+  --text-main: rgba(255, 255, 255, 0.95);
+  --text-muted: rgba(255, 255, 255, 0.55);
+  --border-light: rgba(255, 255, 255, 0.08); /* Frosted Border */
+  --border-highlight: rgba(255, 255, 255, 0.15); /* Subtler inner bevel */
+
+  /* Typography */
+  --font-sans: 'Outfit', system-ui, sans-serif;
+  --font-serif: 'Lora', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+  
+  /* Transition Smoothness */
+  --transition: all 0.5s cubic-bezier(0.2, 0.8, 0.2, 1);
+  
+  /* V8.0 Neo-Glass Geometry */
+  --radius-sm: 8px;
+  --radius-md: 16px; /* Smooth corners for glass */
+  --radius-lg: 24px;  /* Ultra smooth for cards */
+
+  /* Advanced Glassmorphism Blur */
+  --glass-blur: blur(24px);
+}

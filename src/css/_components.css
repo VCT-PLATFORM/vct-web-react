@@ -1,0 +1,457 @@
+/* VCT Design System — Components (Pricing, Infra, Animations, Legal) */
+/* Pricing Section (V4.1) */
+.pricing-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  align-items: center;
+  margin-top: 4rem;
+}
+/* V11.0: Apple/Linear-Tier Spotlight */
+.pricing-glow-orb {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100vw;
+  height: 600px;
+  background: radial-gradient(ellipse at top, rgba(13, 148, 136, 0.25), transparent 70%);
+  z-index: 1; /* Below cards */
+  pointer-events: none;
+}
+
+.pricing-card {
+  padding: 4rem 2rem;
+  border-radius: var(--radius-lg); 
+  /* Deep gradient dropping to pitch black */
+  background: linear-gradient(180deg, rgba(20, 25, 35, 0.7) 0%, rgba(5, 7, 10, 0.95) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.03);
+  /* Laser-etched 1px top highlight */
+  box-shadow: 
+    inset 0 1px 0px rgba(255, 255, 255, 0.2), 
+    0 20px 40px rgba(0, 0, 0, 0.8);
+  backdrop-filter: blur(40px);
+  -webkit-backdrop-filter: blur(40px);
+  text-align: center;
+  position: relative;
+  transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+  overflow: hidden;
+  z-index: 10;
+  /* Hierarchy: shrink slightly to make center card pop */
+  transform: scale(0.95);
+  margin-top: 2rem;
+}
+
+/* Shine sweeping across glass */
+.pricing-card::after {
+  content: "";
+  position: absolute;
+  top: 0; left: -100%;
+  width: 50%; height: 100%;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.05), transparent);
+  transform: skewX(-20deg);
+  transition: 0.7s;
+}
+
+.pricing-card:hover::after {
+  left: 150%;
+}
+
+.pricing-card:hover {
+  transform: scale(0.98) translateY(-10px);
+  border-color: rgba(255, 255, 255, 0.1);
+  box-shadow: 
+    inset 0 1px 0px rgba(255, 255, 255, 0.4), 
+    0 30px 60px rgba(0,0,0,0.9);
+}
+
+.pricing-card.premium {
+  padding: 5rem 2.5rem; /* Taller */
+  margin-top: 0;
+  /* Pitch black base with glowing center */
+  background: linear-gradient(180deg, rgba(20, 184, 166, 0.1) 0%, rgba(5, 7, 10, 0.95) 100%);
+  border: 1px solid rgba(20, 184, 166, 0.1);
+  box-shadow: 
+    0 0 120px rgba(20, 184, 166, 0.15), /* Massive outer glow */
+    inset 0 1px 0px var(--cyan-accent), /* Laser-etched cyan top */
+    0 20px 50px rgba(0,0,0,1); /* Pitch black anchor */
+  transform: scale(1.05); /* Podium effect */
+  z-index: 15;
+}
+.pricing-card.premium:hover {
+  transform: scale(1.05) translateY(-10px);
+  box-shadow: 
+    0 0 80px rgba(20, 184, 166, 0.25), 
+    inset 0 1px 1px rgba(20, 184, 166, 0.5),
+    0 30px 60px rgba(0,0,0,0.8);
+}
+.pricing-badge {
+  position: absolute;
+  top: 1.5rem; /* Pushed inside the card to avoid overflow clipping */
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--cyan-accent);
+  color: #020617;
+  padding: 8px 24px;
+  border-radius: 50px; /* Fully rounded pill */
+  font-size: 0.85rem;
+  font-weight: 800;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  font-family: var(--font-sans);
+  box-shadow: 0 10px 20px rgba(20, 184, 166, 0.3);
+  white-space: nowrap; /* Prevent multiline break */
+  z-index: 20;
+}
+
+.pricing-header h3 {
+  color: var(--cyan-accent);
+  font-size: 1.15rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px; /* Luxury wide tracked titles */
+  font-weight: 500;
+}
+.pricing-features {
+  list-style: none;
+  text-align: left;
+  margin: 2rem 0;
+  padding-top: 2rem;
+  border-top: 1px solid rgba(255,255,255,0.05);
+}
+.pricing-features li {
+  margin-bottom: 1.25rem;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  color: rgba(255, 255, 255, 0.5); /* V11 Hierarchy Dim */
+  font-size: 0.95rem;
+  font-weight: 300;
+  transition: color 0.3s ease;
+}
+.pricing-features li:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+.pricing-features i {
+  margin-top: 4px;
+  filter: drop-shadow(0 0 5px currentColor); /* Icon Glow */
+}
+
+/* Infrastructure Block */
+.infra-block {
+  text-align: center;
+  padding: 6rem 0;
+  background: radial-gradient(circle at top, rgba(13, 148, 136, 0.05), transparent 70%);
+}
+.infra-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 3rem;
+  margin-top: 4rem;
+}
+.infra-card {
+  padding: 2rem;
+  border-radius: var(--radius-lg);
+  background: rgba(255,255,255,0.02);
+  border: 1px solid rgba(255,255,255,0.05);
+  color: var(--text-main); /* FIX: Force text to be white/main in case of inheritance breakage */
+}
+.infra-card h4 {
+  color: #ffffff; /* FIX: Force white title */
+}
+
+/* Animations Trigger */
+.reveal {
+  opacity: 0;
+  transform: translateY(40px) scale(0.98);
+  transition: all 1s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.active {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+/* Glass-morphism Crystal Button (V11: Pill Shape) */
+.btn-glass {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.2); /* Laser top edge */
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+  color: #fff;
+  padding: 14px 28px;
+  border-radius: 50px; /* Pill shape */
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+  margin-top: 1rem;
+}
+.btn-glass:hover {
+  background: rgba(255, 255, 255, 0.15);
+  border-color: rgba(255, 255, 255, 0.3);
+  color: #fff;
+  box-shadow: inset 0 1px 0px rgba(255, 255, 255, 0.5), 0 0 30px rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* ========================================= */
+/* ULTRA-PREMIUM SAAS UPGRADES (PHASE 1)     */
+/* ========================================= */
+
+/* 1. Mouse-Tracking Glow Effect */
+.glow-card {
+  position: relative;
+  overflow: hidden;
+}
+
+.glow-card::after {
+  content: "";
+  position: absolute;
+  inset: -1px; /* Cover border too optionally */
+  background: radial-gradient(
+    400px circle at var(--mouse-x, 0px) var(--mouse-y, 0px),
+    rgba(56, 189, 248, 0.15),
+    transparent 40%
+  );
+  z-index: 1;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.5s ease;
+}
+
+.glow-card:hover::after {
+  opacity: 1;
+}
+
+.glow-card > * {
+  position: relative;
+  z-index: 2; /* Content stays above glow */
+}
+
+/* 2. Removed Noise Texture */
+/* Noise removed for a sharper, cleaner SaaS look */
+
+/* 3. Bento Box Grid System */
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  gap: 1.5rem;
+  grid-auto-flow: dense;
+  margin-top: 3rem;
+}
+
+.bento-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.4), rgba(15, 23, 42, 0.8));
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
+  border-top: 1px solid var(--border-highlight);
+  border-left: 1px solid var(--border-highlight);
+  border-radius: var(--radius-lg);
+  padding: 2.5rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+  color: var(--text-main); /* FIX: Force text to be readable */
+}
+
+.bento-card h3 {
+  color: #ffffff; /* Explicitly bright title */
+}
+
+.bento-card:hover {
+  border-color: rgba(56, 189, 248, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 10px 40px rgba(0,0,0,0.4), 0 0 20px rgba(13, 148, 136, 0.1);
+}
+
+.bento-large-left { grid-column: span 8; }
+.bento-large-right { grid-column: span 8; }
+.bento-small { grid-column: span 4; }
+
+/* Bento responsive: see _responsive.css */
+
+/* 4. Infinite Marquee Animation */
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  position: relative;
+  padding: 3rem 0;
+  background: rgba(10, 15, 22, 0.3);
+  border-top: 1px solid var(--border-light);
+  border-bottom: 1px solid var(--border-light);
+}
+
+/* Fading Edges */
+.marquee-wrapper::before,
+.marquee-wrapper::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  width: 15%;
+  height: 100%;
+  z-index: 2;
+  pointer-events: none;
+}
+.marquee-wrapper::before {
+  left: 0;
+  background: linear-gradient(to right, var(--bg-dark), transparent);
+}
+.marquee-wrapper::after {
+  right: 0;
+  background: linear-gradient(to left, var(--bg-dark), transparent);
+}
+
+.marquee-track {
+  display: flex;
+  width: fit-content;
+  animation: marquee 40s linear infinite;
+  gap: 4rem;
+  align-items: center;
+}
+
+.marquee-track:hover {
+  animation-play-state: paused;
+}
+
+.pricing-price {
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+  font-family: var(--font-sans);
+  letter-spacing: -2px; /* Tight numbers */
+}
+
+.marquee-item {
+  font-family: var(--font-serif);
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: rgba(255,255,255,0.5); /* V9 luxury dim */
+  white-space: nowrap;
+  transition: var(--transition);
+  display: flex;
+  align-items: center;
+  gap: 15px;
+}
+.marquee-item img {
+  height: 30px;
+  filter: grayscale(100%) opacity(0.6);
+  transition: var(--transition);
+}
+
+.marquee-item:hover {
+  color: #fff;
+  text-shadow: 0 0 10px var(--accent-glow);
+}
+.marquee-item:hover img {
+  filter: grayscale(0%) opacity(1);
+}
+
+@keyframes marquee {
+  0% { transform: translateX(0); }
+  100% { transform: translateX(-50%); } 
+}
+
+/* 5. Floating Animation for Mockups */
+@keyframes float {
+  0% { transform: translatey(0px); }
+  50% { transform: translatey(-15px); }
+  100% { transform: translatey(0px); }
+}
+
+.floating-mockup {
+  animation: float 6s ease-in-out infinite;
+  border-radius: 12px;
+  box-shadow: 0 25px 60px rgba(0,0,0,0.6), 0 0 0 1px rgba(255,255,255,0.08);
+  max-width: 100%;
+  height: auto;
+}
+
+/* Hero 2 Col Additions */
+.hero-split {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+.hero-text-content {
+  text-align: left;
+}
+.hero-actions.left-align {
+  justify-content: flex-start;
+}
+
+
+/* ========================================= */
+/* LEGAL PAGES TYPOGRAPHY                    */
+/* ========================================= */
+
+.legal-page {
+  padding-top: 120px;
+  padding-bottom: 80px;
+}
+
+.legal-header {
+  text-align: center;
+  margin-bottom: 4rem;
+  border-bottom: 1px solid var(--border-light);
+  padding-bottom: 2rem;
+}
+
+.legal-header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.legal-updated {
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.legal-content {
+  background: var(--bg-card);
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
+  border-radius: var(--radius-lg);
+  padding: 3rem;
+}
+
+.legal-content h2 {
+  font-size: 1.5rem;
+  margin: 2.5rem 0 1rem;
+  color: var(--accent-primary);
+  font-family: var(--font-serif);
+}
+
+.legal-content h3 {
+  font-size: 1.2rem;
+  margin: 1.5rem 0 0.8rem;
+  color: #fff;
+}
+
+.legal-content p {
+  margin-bottom: 1.2rem;
+  color: var(--text-muted);
+  text-align: justify;
+}
+
+.legal-content ul, .legal-content ol {
+  margin-bottom: 1.2rem;
+  padding-left: 1.5rem;
+  color: var(--text-muted);
+}
+
+.legal-content li {
+  margin-bottom: 0.5rem;
+}
+
+.legal-content strong {
+  color: var(--text-main);
+}
+
+/* Legal responsive: see _responsive.css */

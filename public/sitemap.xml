@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url><loc>https://vctplatform.vn/</loc><changefreq>weekly</changefreq><priority>1.0</priority></url>
+  <url><loc>https://vctplatform.vn/ve-chung-toi</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vctplatform.vn/giai-phap/lien-doan</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vctplatform.vn/giai-phap/cau-lac-bo</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vctplatform.vn/giai-phap/vo-sinh</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vctplatform.vn/giai-phap/giai-dau</loc><changefreq>monthly</changefreq><priority>0.9</priority></url>
+  <url><loc>https://vctplatform.vn/bang-gia</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+  <url><loc>https://vctplatform.vn/tin-tuc</loc><changefreq>daily</changefreq><priority>0.7</priority></url>
+  <url><loc>https://vctplatform.vn/chinh-sach/bao-mat</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+  <url><loc>https://vctplatform.vn/chinh-sach/dieu-khoan</loc><changefreq>yearly</changefreq><priority>0.4</priority></url>
+</urlset>

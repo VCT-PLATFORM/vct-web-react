@@ -1,0 +1,10 @@
+# https://www.robotstxt.org/robotstxt.html
+User-agent: *
+Allow: /
+
+Sitemap: https://vctplatform.vn/sitemap.xml
+
+# Block internal data files
+Disallow: /data/
+Disallow: /.agents/
+Disallow: /.github/

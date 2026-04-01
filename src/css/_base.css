@@ -1,0 +1,360 @@
+/* VCT Design System — Base & Utilities */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* Keyboard Focus Styles (Accessibility) */
+*:focus-visible {
+  outline: 2px solid var(--cyan-accent);
+  outline-offset: 2px;
+  border-radius: 4px;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-main); /* FIX: Set global text color so fallback isn't black */
+  position: relative;
+}
+
+/* Fixed background via pseudo-element (avoids mobile scroll jank) */
+body::after {
+  content: '';
+  position: fixed;
+  top: 0; left: 0; right: 0; bottom: 0;
+  z-index: -2;
+  background-image: 
+    radial-gradient(circle at 20% 40%, rgba(20, 184, 166, 0.08), transparent 40%),
+    radial-gradient(circle at 80% 60%, rgba(6, 182, 212, 0.05), transparent 40%),
+    radial-gradient(circle at 50% 10%, rgba(15, 23, 42, 0.9), transparent 60%);
+  pointer-events: none;
+}
+
+
+/* Typography Classes */
+/* Typography Classes - Tightened Apple-style hierarchy */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 700;
+  line-height: 1.15;
+  letter-spacing: -0.02em; 
+  text-wrap: balance; 
+}
+
+/* Base Tech Utilities */
+.text-mono {
+  font-family: var(--font-mono);
+  letter-spacing: 0.5px;
+}
+
+.text-nowrap {
+  white-space: nowrap;
+}
+
+/* Immersive Hologram Display */
+.cyber-hologram {
+  max-width: 100%;
+  border-radius: 0;
+  border: none !important;
+  box-shadow: none !important;
+  background: transparent;
+  /* Blend completely into the dark void */
+  mix-blend-mode: lighten;
+  filter: drop-shadow(0 0 40px rgba(56, 189, 248, 0.4));
+  -webkit-mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 80%);
+  mask-image: radial-gradient(circle at center, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 80%);
+}
+
+.title-serif {
+  font-family: var(--font-serif);
+  font-weight: 600;
+}
+
+.text-accent {
+  color: var(--accent-primary);
+  text-shadow: 0 0 10px var(--accent-glow);
+}
+
+.text-cyan {
+  color: var(--cyan-accent);
+  text-shadow: 0 0 10px var(--cyan-glow);
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, rgba(255,255,255,1) 30%, rgba(20,184,166,1) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Luxury Chrome/Silver Tiêu Đề */
+.text-chrome {
+  background: linear-gradient(180deg, #FFFFFF 0%, #A5B4FC 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.text-emerald {
+  background: linear-gradient(135deg, var(--cyan-accent) 0%, var(--accent-primary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Subtitle thinned out */
+.text-muted-delicate {
+  color: var(--text-muted);
+  font-weight: 300;
+  font-size: 1.1rem;
+}
+
+/* Base Components */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.glass-card {
+  background: linear-gradient(135deg, rgba(30, 41, 59, 0.5), rgba(15, 23, 42, 0.8));
+  backdrop-filter: var(--glass-blur);
+  -webkit-backdrop-filter: var(--glass-blur);
+  border: 1px solid var(--border-light);
+  border-top: 1px solid var(--border-highlight);
+  border-left: 1px solid var(--border-highlight);
+  border-radius: var(--radius-lg); /* Smooth Premium Curve */
+  box-shadow: 0 16px 40px rgba(0,0,0,0.4), inset 0 0 0 1px rgba(255,255,255,0.02);
+  padding: 2.5rem;
+  transition: var(--transition);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Glass Wrap for Text Readability over Busy BG */
+.feature-glass-wrap {
+  background: rgba(2, 6, 23, 0.65);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+  border-left: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  padding: 2.5rem;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.6), inset 0 0 0 1px rgba(255, 255, 255, 0.02);
+}
+
+/* Specular Glare / Frosted reflection */
+.glass-card::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.08) 0%, transparent 40%);
+  pointer-events: none;
+}
+
+.glass-card:hover {
+  border-color: rgba(56, 189, 248, 0.4);
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0,0,0,0.8), 0 0 20px rgba(13, 148, 136, 0.2);
+}
+
+.glass-card:hover::before {
+  opacity: 1;
+}
+
+/* Premium Buttons */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 14px 28px;
+  font-size: 0.95rem;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  border-radius: 50px; /* Pill shape for premium feel */
+  text-decoration: none;
+  transition: var(--transition);
+  cursor: pointer;
+  border: none;
+  position: relative;
+  font-family: var(--font-sans); 
+  overflow: hidden;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, var(--cyan-accent), var(--accent-primary));
+  color: #000;
+  font-weight: 600;
+  box-shadow: 0 8px 25px var(--cyan-glow), inset 0 2px 0 rgba(255,255,255,0.4);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 35px var(--cyan-glow), inset 0 2px 0 rgba(255,255,255,0.6);
+}
+
+.btn-outline {
+  background: rgba(15, 23, 42, 0.4);
+  backdrop-filter: blur(10px);
+  color: #fff;
+  border: 1px solid var(--border-light);
+  box-shadow: inset 0 2px 0 rgba(255,255,255,0.05);
+}
+
+.btn-outline:hover {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.2);
+  transform: translateY(-2px); 
+}
+
+/* ==========================================================
+ * Seamless Infographic Canvas Optimization
+ * Background spans the full height/width of the page like a macro-infographic.
+ * Micro-detail images prevent blurry zooming.
+ * ========================================================== */
+
+/* 
+ * Apply to the #main-content wrapping all sections.
+ * This guarantees the background runs seamlessly through the entire vertical scroll.
+ */
+.infographic-canvas {
+    background-color: #020617; /* Fallback baseline */
+    position: relative;
+}
+
+/* Use pseudo-element for background so we can control opacity independent of content */
+.infographic-canvas::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    opacity: 0.20; /* Subdued enough to read text clearly */
+    filter: brightness(1.1);
+    z-index: 0;
+    pointer-events: none; /* Let clicks pass through to sections below */
+}
+
+/* Force all child sections to stack ABOVE the background pseudo-element */
+.infographic-canvas > * {
+    position: relative;
+    z-index: 10;
+}
+
+/* Desktop & Mobile Dual-Canvas (Infographic Paradigm) */
+.hero-infographic-b2g::before { background: url('/assets/images/hero_bg_b2g_infographic_1775032455843.png') center top / 100% auto repeat-y; }
+.hero-infographic-b2b::before { background: url('/assets/images/hero_bg_b2b_infographic_1775032477856.png') center top / 100% auto repeat-y; }
+.hero-infographic-b2c::before { background: url('/assets/images/hero_bg_b2c_infographic_1775032495709.png') center top / 100% auto repeat-y; }
+.hero-infographic-tourney::before { background: url('/assets/images/hero_bg_tourney_infographic_1775032509827.png') center top / 100% auto repeat-y; }
+
+/* ==========================================================
+ * Funnel Optimization Components (Social Proof, FAQ, Workflow)
+ * ========================================================== */
+
+/* Logo Cloud / Trust Badges */
+.logo-cloud {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    opacity: 0.6;
+    filter: grayscale(100%);
+    transition: var(--transition);
+}
+.logo-cloud:hover {
+    opacity: 0.9;
+}
+.logo-cloud img {
+    height: 40px;
+    max-width: 140px;
+    object-fit: contain;
+}
+
+/* Workflow Timeline Grid */
+.workflow-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 2rem;
+    position: relative;
+}
+.workflow-step {
+    text-align: center;
+    padding: 2rem;
+    border-radius: 20px;
+    background: rgba(15, 23, 42, 0.4);
+    border: 1px solid rgba(255,255,255,0.05);
+    backdrop-filter: blur(10px);
+    transition: var(--transition);
+    position: relative;
+    z-index: 1;
+}
+.workflow-step:hover {
+    transform: translateY(-5px);
+    border-color: rgba(6, 182, 212, 0.3);
+}
+.workflow-step .step-number {
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--cyan-accent), var(--accent-primary));
+    color: #000;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin: -45px auto 1rem auto;
+    box-shadow: 0 4px 15px rgba(6,182,212,0.4);
+}
+
+/* Native CSS FAQ Accordion using details/summary */
+.faq-accordion details {
+    background: rgba(15, 23, 42, 0.6);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    overflow: hidden;
+    backdrop-filter: blur(10px);
+}
+.faq-accordion summary {
+    padding: 1.5rem;
+    font-size: 1.1rem;
+    font-weight: 600;
+    color: #F8FAFC;
+    cursor: pointer;
+    list-style: none; /* Remove default triangle */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.faq-accordion summary::-webkit-details-marker {
+    display: none;
+}
+.faq-accordion summary::after {
+    content: '\f078'; /* fa-chevron-down */
+    font-family: 'Font Awesome 6 Free';
+    font-weight: 900;
+    color: var(--cyan-accent);
+    transition: transform 0.3s ease;
+}
+.faq-accordion details[open] summary::after {
+    transform: rotate(180deg);
+}
+.faq-accordion .faq-content {
+    padding: 0 1.5rem 1.5rem 1.5rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+}
+
+/* Testimonial Avatar */
+.testimonial-avatar {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 2px solid var(--cyan-accent);
+    margin-bottom: 1rem;
+}
