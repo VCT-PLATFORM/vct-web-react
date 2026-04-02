@@ -1,5 +1,14 @@
 [
   {
+    "id": "ky-nguyen-giay-lien-doan",
+    "title": "[Góc Nhìn Lãnh Đạo] Liên đoàn của bạn đang đánh rơi bao nhiêu nguồn lực vào \"Kỷ nguyên giấy\"?",
+    "summary": "Bước qua thời kỳ thủ công, tiến vào Kỷ nguyên Minh Bạch và Tự Động Hóa. 70% chi phí quản trị đang bị lãng phí vào quy trình không sinh ra giá trị.",
+    "thumbnail": "/assets/images/news-day1.png",
+    "date": "02/04/2026",
+    "author": "Giám đốc Vận hành (Jen)",
+    "content": "<p>Kính thưa các vị Chủ tịch, Tổng Thư ký và Ban chấp hành Liên đoàn Võ Cổ truyền các cấp:</p><p>Có bao giờ Quý vị tự hỏi: Để tìm lại chính xác ngày cấp đai và chứng nhận của một Võ sư từ 10 năm trước, Ban chuyên môn của Liên đoàn đang phải mất bao nhiêu phút để lật tìm trong kho lưu trữ?</p><p>Sự thật là: <strong>70% chi phí quản trị của các Liên đoàn cấp Tỉnh và Quốc gia hiện đang bị lãng phí hoàn toàn vào các quy trình không sinh ra giá trị:</strong></p><ul><li style=\"margin-bottom:10px\">❌ In ấn hàng ngàn phôi chứng chỉ, đóng dấu tay ròng rã nhiều tuần lễ.</li><li style=\"margin-bottom:10px\">❌ Thất lạc hồ sơ gốc khi có biến động nhân sự quản lý.</li><li style=\"margin-bottom:10px\">❌ Không thể kiểm soát sát sao số liệu báo cáo về lượng Võ sinh tham gia tập luyện từ hàng ngàn CLB trực thuộc.</li></ul><p>Giữa kỷ nguyên 4.0, một hệ sinh thái Võ thuật đồ sộ không thể bị trói buộc bởi những tủ hồ sơ bụi bặm.</p><h3 class=\"text-cyan\" style=\"margin-bottom:20px; font-size: 1.5rem; margin-top:20px;\">Chuyển Giao Quyền Lực Sang \"Command Center\"</h3><p><strong>VCT Platform</strong> tự hào mang đến giải pháp <strong>B2G (Doanh nghiệp - Chính phủ)</strong> đầu tiên được phát triển riêng cho Võ thuật Việt Nam, mang sức mạnh của công nghệ vào lòng bàn tay Ban Lãnh đạo:</p><ul><li style=\"margin-bottom:10px\">✅ <strong>Bản đồ hóa (Mapping):</strong> Tích hợp hàng chục ngàn Võ sinh và Võ đường lên một Sa bàn trực quan duy nhất (Real-time).</li><li style=\"margin-bottom:10px\">✅ <strong>Cấp phát Chứng nhận Ký số:</strong> Áp dụng công nghệ Ký số & QR Code chống giả mạo vĩnh viễn cho hàng ngàn văn bản, quyết định thăng đai.</li><li style=\"margin-bottom:10px\">✅ <strong>Thống kê tự động:</strong> Báo cáo tức thời để gửi Sở Văn hóa TTTT & DL chỉ bằng một thao tác xuất File.</li></ul><p>Bước qua thời kỳ thủ công, tiến vào Kỷ nguyên Minh Bạch và Tự Động Hóa. Liên đoàn của bạn đã sẵn sàng cho sự dịch chuyển mang tính lịch sử này?</p><p style=\"margin-top:20px;\">👉 <strong><a href=\"/giai-phap/lien-doan\" style=\"color:var(--cyan-accent);\">Trải nghiệm Sa bàn Quản lý Liên đoàn</a></strong></p>"
+  },
+  {
     "id": "chuyen-doi-so-vo-duong-clb",
     "title": "[Góc Nhìn] Võ đường của bạn đang quản lý võ sinh bằng sổ tay hay nền tảng số?",
     "summary": "Đã đến lúc 'lên đồ' cho môn phái của bạn. VCT Platform mang đến giải pháp số hóa All-in-One: Quản lý võ sinh, xếp lịch thi thăng cấp, đóng học phí VietQR tự động.",
