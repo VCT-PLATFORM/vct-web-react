@@ -9,6 +9,7 @@ import SolutionLienDoan from './pages/SolutionLienDoan';
 import SolutionCauLacBo from './pages/SolutionCauLacBo';
 import SolutionVoSinh from './pages/SolutionVoSinh';
 import SolutionGiaiDau from './pages/SolutionGiaiDau';
+import Solutions from './pages/Solutions';
 import Pricing from './pages/Pricing';
 import News from './pages/News';
 import PrivacyPolicy from './pages/PrivacyPolicy';
@@ -63,6 +64,7 @@ const App: React.FC = () => {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ve-chung-toi" element={<AboutUs />} />
+        <Route path="/giai-phap" element={<Solutions />} />
         <Route path="/giai-phap/lien-doan" element={<SolutionLienDoan />} />
         <Route path="/giai-phap/cau-lac-bo" element={<SolutionCauLacBo />} />
         <Route path="/giai-phap/vo-sinh" element={<SolutionVoSinh />} />

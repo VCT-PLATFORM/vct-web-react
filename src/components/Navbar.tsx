@@ -16,12 +16,10 @@ const Navbar: React.FC = () => {
   }, []);
 
   // Close mobile menu on route change
-  const prevPathname = React.useRef(location.pathname);
-  if (prevPathname.current !== location.pathname) {
-    prevPathname.current = location.pathname;
+  useEffect(() => {
     if (isMobileMenuOpen) setIsMobileMenuOpen(false);
     if (isMobileDropdownOpen) setIsMobileDropdownOpen(false);
-  }
+  }, [location.pathname]);
 
   const changeLanguage = (lng: string) => {
     i18n.changeLanguage(lng);
@@ -77,10 +75,15 @@ const Navbar: React.FC = () => {
           <div className={`nav-links${isMobileMenuOpen ? ' show' : ''}`}>
             <Link to="/">{t('nav_home')}</Link>
             <div className={`nav-dropdown${isMobileDropdownOpen ? ' mobile-open' : ''}`}>
-              <a href="#" className="dropdown-toggle" aria-haspopup="true" aria-expanded={isMobileDropdownOpen} style={{display:'flex',alignItems:'center',gap:'6px'}}
-                onClick={(e) => { e.preventDefault(); setIsMobileDropdownOpen(!isMobileDropdownOpen); }}>
+              <Link to="/giai-phap" className="dropdown-toggle" aria-haspopup="true" aria-expanded={isMobileDropdownOpen} style={{display:'flex',alignItems:'center',gap:'6px'}}
+                onClick={(e) => { 
+                  if (window.innerWidth <= 768) {
+                    e.preventDefault(); 
+                    setIsMobileDropdownOpen(!isMobileDropdownOpen); 
+                  }
+                }}>
                 <span>{t('nav_solutions')}</span> <i className="fas fa-chevron-down" style={{fontSize:'0.8rem'}}></i>
-              </a>
+              </Link>
               <div className="dropdown-menu">
                 <Link to="/giai-phap/lien-doan" className="dropdown-item"><i className="fas fa-sitemap"></i> <span>{t('nav_b2g')}</span></Link>
                 <Link to="/giai-phap/cau-lac-bo" className="dropdown-item"><i className="fas fa-store"></i> <span>{t('nav_b2b')}</span></Link>
