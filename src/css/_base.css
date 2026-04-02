@@ -246,6 +246,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Desktop & Mobile Dual-Canvas (Infographic Paradigm) */
+.hero-infographic-home::before { background: url('/assets/images/hero_bg_home_vertical.png') center top / 100% auto repeat-y; opacity: 0.15; filter: brightness(0.8); }
 .hero-infographic-hub::before { background: url('/assets/images/hero_bg_hub_vertical.png') center top / 100% auto repeat-y; opacity: 0.10; filter: brightness(0.8); }
 .hero-infographic-b2g::before { background: url('/assets/images/hero_bg_b2g_infographic_1775032455843.png') center top / 100% auto repeat-y; }
 .hero-infographic-b2b::before { background: url('/assets/images/hero_bg_b2b_infographic_1775032477856.png') center top / 100% auto repeat-y; }

@@ -21,11 +21,9 @@ const Home: React.FC = () => {
   }, []);
 
   return (
-    <div ref={mainRef}>
+    <div ref={mainRef} className="infographic-canvas hero-infographic-home" style={{ minHeight: '100vh', overflow: 'hidden' }}>
       {/* 1. S1: Ultra Premium Hero */}
       <header className="hero">
-        <div className="hero-bg"></div>
-        <div className="hero-overlay"></div>
         <div className="container relative">
           <div className="hero-split">
             <div className="hero-text-content reveal active">
