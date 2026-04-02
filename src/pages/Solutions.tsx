@@ -65,7 +65,16 @@ const Solutions: React.FC = () => {
       {/* 1. Ultra Premium Hero */}
       <header className="hero" style={{ padding: '160px 0 100px 0', borderBottom: '1px solid rgba(255,255,255,0.05)', position: 'relative' }}>
         {/* Dynamic Background Overlays */}
-        <div className="hero-bg" style={{ position: 'absolute', top: 0, left: 0, right: 0, bottom: 0, opacity: 0.6 }}></div>
+        <div className="hero-bg" style={{ 
+          position: 'absolute', 
+          top: 0, left: 0, right: 0, bottom: 0, 
+          opacity: 0.25, 
+          backgroundImage: 'url("/assets/images/news-digital-era.png")',
+          backgroundSize: 'cover',
+          backgroundPosition: 'center',
+          backgroundAttachment: 'fixed',
+          mixBlendMode: 'luminosity'
+        }}></div>
         <div style={{ position: 'absolute', top: '-20%', left: '50%', transform: 'translateX(-50%)', width: '80%', height: '80%', background: 'radial-gradient(circle, rgba(13,148,136,0.15) 0%, transparent 60%)', zIndex: 0, pointerEvents: 'none' }}></div>
         <div className="hero-overlay" style={{ background: 'linear-gradient(180deg, transparent 0%, var(--bg-deep) 100%)', position: 'absolute', bottom: 0, left: 0, right: 0, height: '50px', zIndex: 1 }}></div>
         
