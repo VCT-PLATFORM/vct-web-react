@@ -60,21 +60,11 @@ const Solutions: React.FC = () => {
   ];
 
   return (
-    <div ref={mainRef} style={{ background: 'var(--bg-deep)', minHeight: '100vh', overflow: 'hidden' }}>
+    <div ref={mainRef} className="infographic-canvas hero-infographic-b2g" style={{ minHeight: '100vh', overflow: 'hidden' }}>
       
       {/* 1. Ultra Premium Hero */}
       <header className="hero" style={{ padding: '160px 0 100px 0', borderBottom: '1px solid rgba(255,255,255,0.05)', position: 'relative' }}>
         {/* Dynamic Background Overlays */}
-        <div className="hero-bg" style={{ 
-          position: 'absolute', 
-          top: 0, left: 0, right: 0, bottom: 0, 
-          opacity: 0.15, 
-          backgroundImage: 'url("/assets/images/hero_bg_b2g_infographic_1775032455843.png")',
-          backgroundSize: 'cover',
-          backgroundPosition: 'center top',
-          backgroundAttachment: 'fixed',
-          mixBlendMode: 'normal'
-        }}></div>
         <div style={{ position: 'absolute', top: '-20%', left: '50%', transform: 'translateX(-50%)', width: '80%', height: '80%', background: 'radial-gradient(circle, rgba(13,148,136,0.15) 0%, transparent 60%)', zIndex: 0, pointerEvents: 'none' }}></div>
         <div className="hero-overlay" style={{ background: 'linear-gradient(180deg, transparent 0%, var(--bg-deep) 100%)', position: 'absolute', bottom: 0, left: 0, right: 0, height: '50px', zIndex: 1 }}></div>
         
