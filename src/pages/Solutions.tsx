@@ -60,7 +60,7 @@ const Solutions: React.FC = () => {
   ];
 
   return (
-    <div ref={mainRef} className="infographic-canvas hero-infographic-b2g" style={{ minHeight: '100vh', overflow: 'hidden' }}>
+    <div ref={mainRef} className="infographic-canvas hero-infographic-hub" style={{ minHeight: '100vh', overflow: 'hidden' }}>
       
       {/* 1. Ultra Premium Hero */}
       <header className="hero" style={{ padding: '160px 0 100px 0', borderBottom: '1px solid rgba(255,255,255,0.05)', position: 'relative' }}>
