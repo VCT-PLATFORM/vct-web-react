@@ -68,8 +68,8 @@ const Solutions: React.FC = () => {
         <div className="hero-bg" style={{ 
           position: 'absolute', 
           top: 0, left: 0, right: 0, bottom: 0, 
-          opacity: 0.25, 
-          backgroundImage: 'url("/assets/images/news-digital-era.png")',
+          opacity: 0.35,  /* Increased opacity slightly to show off new design */
+          backgroundImage: 'url("/assets/images/hero_bg_solutions_desktop.png")',
           backgroundSize: 'cover',
           backgroundPosition: 'center',
           backgroundAttachment: 'fixed',
