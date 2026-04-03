@@ -1,5 +1,14 @@
 [
   {
+    "id": "giai-dau-live-scoring-vct",
+    "title": "[Trải Nghiệm Chiến Trường] Kết thúc cơn ác mộng \"Bảng điểm giấy\" tại các Giải Võ Thuật!",
+    "summary": "Sự chuyên nghiệp bắt đầu từ minh bạch. Khám phá giải pháp Live Scoring giúp phụ huynh và võ sư theo dõi điểm số Real-time ngay trên smartphone.",
+    "thumbnail": "/assets/images/news-day2.png",
+    "date": "04/04/2026",
+    "author": "Giám đốc Vận hành (Jen)",
+    "content": "<p>Bạn có nhớ cảm giác hàng trăm Huấn luyện viên và Phụ huynh phải đu bám chật kín quanh Bàn thư ký Giải đấu chỉ để... xem con mình chuẩn bị thi đấu ở Thảm số mấy?</p><p>Bầu không khí ngột ngạt, những tờ giấy A4 dán đầy tường với nét chữ nguệch ngoạc, và nỗi lo \"Sao mãi chưa thấy tên con?\" – Đó là một hình ảnh kìm hãm sự chuyên nghiệp của Võ thuật suốt nhiều thập kỷ.</p><h3 class=\"text-cyan\" style=\"margin-bottom:20px; font-size: 1.5rem; margin-top:20px;\">Cú Hích Thay Đổi Cục Diện</h3><p><strong>VCT Platform</strong> mang đến giải pháp <strong>Live Scoring</strong> chuyên nghiệp, biến mọi giải đấu phong trào trở thành một sự kiện đẳng cấp quốc tế:</p><ul><li style=\"margin-bottom:10px\">✅ <strong>LIVE SCORING:</strong> Bảng điểm điện tử truyền tải trực tiếp kết quả từng trận đấu lên màn hình LED và thiết bị cá nhân.</li><li style=\"margin-bottom:10px\">✅ <strong>MINH BẠCH 100%:</strong> Người xem chỉ việc ngồi yên trên khán đài, mở điện thoại và biết ngay lịch thi đấu, kết quả thăng đai.</li><li style=\"margin-bottom:10px\">✅ <strong>GIẢM TẢI ÁP LỰC:</strong> Ban thư ký không còn là \"bia đỡ đạn\" cho những thắc mắc vụn vặt về thời gian và địa điểm thi đấu.</li></ul><p>Thế giới đã tiến lên. Võ thuật Việt Nam cũng không thể đứng yên trong kỷ nguyên số hóa.</p><p style=\"margin-top:20px;\">👉 <strong><a href=\"/giai-phap/giai-dau\" style=\"color:var(--cyan-accent);\">Tìm hiểu về VCT Tournament Engine</a></strong></p>"
+  },
+  {
     "id": "ky-nguyen-giay-lien-doan",
     "title": "[Góc Nhìn Lãnh Đạo] Liên đoàn của bạn đang đánh rơi bao nhiêu nguồn lực vào \"Kỷ nguyên giấy\"?",
     "summary": "Bước qua thời kỳ thủ công, tiến vào Kỷ nguyên Minh Bạch và Tự Động Hóa. 70% chi phí quản trị đang bị lãng phí vào quy trình không sinh ra giá trị.",
