@@ -1,5 +1,14 @@
 [
   {
+    "id": "thoat-khoi-lich-thi-dau-giay",
+    "title": "[Góc Nhìn Thực Tế] Thi đấu võ thuật, đừng để mất sức vì... chen lấn xem điểm!",
+    "summary": "Mỗi kỳ giải vương tới, sự căng thẳng lớn nhất chưa hẳn đến từ trên thảm đấu mà là cảnh chen lấn đổ mồ hôi chụp một tờ giấy A4 in lịch dán ở trước cửa.",
+    "thumbnail": "/assets/images/news-day3-digital.png",
+    "date": "05/04/2026",
+    "author": "Giám đốc Vận hành (Jen)",
+    "content": "<p>Mỗi kỳ giải vương tới, sự căng thẳng lớn nhất chưa hẳn bắt nguồn từ trên thảm đấu. Thực tế, cảnh tượng quen thuộc và ám ảnh nhất tại rất nhiều nhà thi đấu tại Việt Nam chính là: Hì hục vây quanh... một tờ giấy A4 in lịch dán ở trước cửa!</p><p>Trạng thái \"Dán Giấy\" này mang lại hệ lụy thực tiếp:</p><ul><li style=\"margin-bottom:10px\">❌ VĐV mất tập trung, mệt mỏi trước giờ G vì vừa khởi động vừa thấp thỏm canh tên.</li><li style=\"margin-bottom:10px\">❌ Trưởng đoàn chạy đôn chạy đáo đi tìm VĐV khi Ban tổ chức đọc loa rè (rất ồn & khó nghe).</li><li style=\"margin-bottom:10px\">❌ Phụ huynh ở nhà không biết con em mình mấy giờ lên thảm để theo dõi.</li></ul><h3 class=\"text-cyan\" style=\"margin-bottom:20px; font-size: 1.5rem; margin-top:20px;\">Nâng cấp trải nghiệm với VCT Platform</h3><p>Với hệ sinh thái <strong>Quản lý Giải đấu Tự động (Tournament Center) của VCT</strong>, từ Ban huấn luyện đến VĐV đều được trao một trợ lý số trong tầm tay:</p><ul><li style=\"margin-bottom:10px\">📱 <strong>Smart Dashboard:</strong> Lịch thi đấu, thay đổi thảm, tiến độ giải… bắn thẳng về smartphone chuẩn Real-time.</li><li style=\"margin-bottom:10px\">🌍 <strong>Live Scoring trực tuyến:</strong> Phụ huynh ở xa vẫn cập nhật ngay lập tức điểm số, kết quả thắng thua qua Link minh bạch.</li><li style=\"margin-bottom:10px\">⭐ <strong>Chuyên môn hóa:</strong> Giải tỏa căng thẳng cho Ban Thư ký, trả lại 100% thời gian cho VĐV khởi động!</li></ul><p>Không còn cảnh chen lấn, xô đẩy xem tên. Hãy để một thao tác vuốt màn hình giúp giải đấu của bạn sang trang.</p><p style=\"margin-top:20px;\">👉 <strong><a href=\"/giai-phap/giai-dau\" style=\"color:var(--cyan-accent);\">Trải nghiệm nền tảng Giải đấu ngay hôm nay</a></strong></p>"
+  },
+  {
     "id": "giai-dau-live-scoring-vct",
     "title": "[Trải Nghiệm Chiến Trường] Kết thúc cơn ác mộng \"Bảng điểm giấy\" tại các Giải Võ Thuật!",
     "summary": "Sự chuyên nghiệp bắt đầu từ minh bạch. Khám phá giải pháp Live Scoring giúp phụ huynh và võ sư theo dõi điểm số Real-time ngay trên smartphone.",
