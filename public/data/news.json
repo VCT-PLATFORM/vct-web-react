@@ -1,5 +1,14 @@
 [
   {
+    "id": "ac-mong-dong-so-giai-dau",
+    "title": "[Góc Khuất Ban Tổ Chức] Ác mộng \"Đóng sổ\" và cuộc chiến với hàng trăm file Excel lệch cân!",
+    "summary": "Rà soát cân nặng, sai năm sinh, thiếu biên lai lệ phí... làm sao Ban tổ chức có thể ngủ ngon trước ngày khai mạc? VCT Platform mang đến giải pháp 1-Click Đóng Sổ.",
+    "thumbnail": "/assets/images/news-day4-dashboard.png",
+    "date": "06/04/2026",
+    "author": "Giám đốc Vận hành (Jen)",
+    "content": "<p>Bạn có biết: Khoảng thời gian kinh hoàng nhất của một Trưởng ban tổ chức giải võ thuật không phải là ngày khai mạc, mà là… Tuần lễ Đóng Sổ Đăng Ký!</p><p><em>\"Thầy ơi cho đổi hạng cân em này nhé!\"</em><br/><em>\"Alo Ban tổ chức, đoàn em nộp tiền rồi mà quên chụp biên lai.\"</em><br/><em>\"Bé này năm nay 15 tuổi sao lại đăng ký khóa U14?\"</em></p><p>Hàng ngàn tin nhắn Zalo chồng chéo, hàng chục File Excel gửi về từ các Trưởng đoàn với đủ loại format khác nhau. Hậu quả? Trưởng ban chuyên môn phải thức trắng đêm để cố gọt giũa dữ liệu, và kết quả bốc thăm vẫn... rớt tên VĐV. Cảnh tượng này bao giờ mới chấm dứt?</p><h3 class=\"text-cyan\" style=\"margin-bottom:20px; font-size: 1.5rem; margin-top:20px;\">VCT Platform: Khóa Sổ Tự Động Trong 1 Nốt Nhạc</h3><p>Say Goodbye với quy trình thủ công. Nền tảng VCT mang đến quyền lực tuyệt đối cho Ban tổ chức giải ngay trên màn hình (Dark-mode Command Center):</p><ul><li style=\"margin-bottom:10px\">✅ <strong>Auto Check Chéo Dữ Liệu:</strong> Hệ thống tự động chặn (Block) mọi VĐV khai gian năm sinh, đăng ký sai hạng cân/độ tuổi quy định của Giải.</li><li style=\"margin-bottom:10px\">✅ <strong>Lệ Phí Real-time:</strong> Tích hợp VietQR Fintech. Trưởng đoàn nộp lệ phí tới đâu, hệ thống gạch nợ tự động tới đó. Chấm dứt kỷ nguyên \"đòi nợ\" và \"thiếu biên lai\".</li><li style=\"margin-bottom:10px\">✅ <strong>One-Click \"ĐÓNG SỔ\":</strong> Đúng 12:00 đêm hạn chót, hệ thống tự động khóa băng tính năng đăng ký. Danh sách được chốt cứng 100% sạch sẽ và đẩy thẳng vào Máy Bốc Thăm Điện Tử!</li></ul><p>Là những nhà làm chuyên môn, hãy để tâm trí của bạn tập trung vào chất lượng chuyên môn. Rác hành chính? Cứ để VCT lo!</p><p style=\"margin-top:20px;\">👉 <strong><a href=\"/giai-phap/giai-dau\" style=\"color:var(--cyan-accent);\">Trải nghiệm Quản lý Giải Đấu Tự Động</a></strong></p>"
+  },
+  {
     "id": "thoat-khoi-lich-thi-dau-giay",
     "title": "[Góc Nhìn Thực Tế] Thi đấu võ thuật, đừng để mất sức vì... chen lấn xem điểm!",
     "summary": "Mỗi kỳ giải vương tới, sự căng thẳng lớn nhất chưa hẳn đến từ trên thảm đấu mà là cảnh chen lấn đổ mồ hôi chụp một tờ giấy A4 in lịch dán ở trước cửa.",
