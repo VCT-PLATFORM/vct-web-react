@@ -12,6 +12,7 @@ const News: React.FC = () => {
   const [news, setNews] = useState<NewsItem[]>([]);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(false);
+  const [visibleCount, setVisibleCount] = useState(9);
 
   useEffect(() => {
     document.title = "Cổng Tin Tức VCT Platform";
@@ -47,23 +48,38 @@ const News: React.FC = () => {
             </div>
           )}
           {!loading && !error && news.length > 0 && (
-            <div className="features-grid">
-              {news.map((item, index) => (
-                <div key={index} className="glass-card reveal active" style={{padding:0,overflow:'hidden',display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
-                  <div>
-                    <div style={{height:'200px',backgroundImage:`url('${item.thumbnail}')`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
-                    <div style={{padding:'1.5rem'}}>
-                      <div style={{fontSize:'0.8rem',color:'var(--accent-primary)',marginBottom:'10px'}}><i className="fas fa-calendar-alt"></i> {item.date}</div>
-                      <h3 className="title-serif text-main" style={{fontSize:'1.25rem',marginBottom:'10px',lineHeight:1.4}}>{item.title}</h3>
-                      <p className="text-muted" style={{fontSize:'0.95rem'}}>{item.summary}</p>
+            <>
+              <div className="features-grid">
+                {news.slice(0, visibleCount).map((item, index) => (
+                  <div key={index} className="glass-card reveal active" style={{padding:0,overflow:'hidden',display:'flex',flexDirection:'column',justifyContent:'space-between'}}>
+                    <div>
+                      <div style={{height:'200px',backgroundImage:`url('${item.thumbnail}')`,backgroundSize:'cover',backgroundPosition:'center'}}></div>
+                      <div style={{padding:'1.5rem'}}>
+                        <div style={{fontSize:'0.8rem',color:'var(--accent-primary)',marginBottom:'10px'}}><i className="fas fa-calendar-alt"></i> {item.date}</div>
+                        <h3 className="title-serif text-main" style={{fontSize:'1.25rem',marginBottom:'10px',lineHeight:1.4}}>{item.title}</h3>
+                        <p className="text-muted" style={{fontSize:'0.95rem'}}>{item.summary}</p>
+                      </div>
+                    </div>
+                    <div style={{padding:'0 1.5rem 1.5rem 1.5rem',borderTop:'1px solid var(--border-light)',paddingTop:'1rem',marginTop:'1rem'}}>
+                      <a href={`/tin-tuc/bai-viet?id=${item.id}`} style={{color:'var(--cyan-accent)',fontWeight:500,fontSize:'0.95rem',textDecoration:'none'}}>Đọc bài viết <i className="fas fa-arrow-right"></i></a>
                     </div>
                   </div>
-                  <div style={{padding:'0 1.5rem 1.5rem 1.5rem',borderTop:'1px solid var(--border-light)',paddingTop:'1rem',marginTop:'1rem'}}>
-                    <a href={`/tin-tuc/bai-viet?id=${item.id}`} style={{color:'var(--cyan-accent)',fontWeight:500,fontSize:'0.95rem',textDecoration:'none'}}>Đọc bài viết <i className="fas fa-arrow-right"></i></a>
-                  </div>
+                ))}
+              </div>
+              
+              {visibleCount < news.length && (
+                <div style={{textAlign: 'center', marginTop: '3rem'}}>
+                  <button 
+                    onClick={() => setVisibleCount(prev => prev + 9)}
+                    style={{padding: '0.8rem 2rem', fontSize: '1rem', cursor: 'pointer', border: 'none', borderRadius: '8px', background: 'var(--cyan-accent)', color: '#000', fontWeight: 'bold', display: 'inline-flex', alignItems: 'center', gap: '8px', transition: 'all 0.3s ease'}}
+                    onMouseOver={(e) => e.currentTarget.style.transform = 'translateY(-2px)'}
+                    onMouseOut={(e) => e.currentTarget.style.transform = 'translateY(0)'}
+                  >
+                    Xem thêm bài viết <i className="fas fa-chevron-down"></i>
+                  </button>
                 </div>
-              ))}
-            </div>
+              )}
+            </>
           )}
           {!loading && !error && news.length === 0 && (
             <div style={{textAlign:'center',padding:'4rem',color:'var(--text-muted)'}}>
