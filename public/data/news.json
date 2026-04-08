@@ -1,5 +1,14 @@
 [
   {
+    "id": "he-sinh-thai-du-lieu-lien-doan",
+    "title": "Hệ sinh thái dữ liệu Liên đoàn VCT - Bản lề cho Kỷ nguyên số hóa",
+    "summary": "Bản tóm lược về định hướng lưu trữ vĩnh viễn và cấu trúc tài sản số 5 phân tầng dành cho hệ thống Liên đoàn các cấp.",
+    "thumbnail": "/assets/images/news-federation-tree.png",
+    "date": "08/04/2026",
+    "author": "Giám đốc Vận hành (Jen)",
+    "content": "<p>Trong quá trình chuyển đổi số, dữ liệu không chỉ là tài liệu báo cáo mà là <strong>Tài sản lưu trữ vĩnh viễn</strong>. Việc phân tầng hợp lý sẽ quyết định tốc độ phát triển của Võ thuật Việt Nam trong kỷ nguyên mới.</p><h3 class=\"text-cyan\" style=\"margin-bottom:20px; font-size: 1.5rem; margin-top:20px;\">Cấu trúc 5 phân tầng dữ liệu</h3><p>Hệ sinh thái của VCT Platform được thiết kế với chuẩn bảo mật và quản trị dữ liệu chặt chẽ, phân tách rõ ràng trách nhiệm từ cấp Liên đoàn định hướng chiến lược đến từng Vận động viên/Võ sinh:</p><ul><li style=\"margin-bottom:10px\">🏛️ <strong>Liên Đoàn Quốc Gia:</strong> Nắm giữ chuẩn hóa khung chuyên môn, chính sách, hệ quy chiếu chung.</li><li style=\"margin-bottom:10px\">🏢 <strong>Liên Đoàn Tỉnh/Thành/Ngành:</strong> Quản lý danh sách CLB, phê duyệt chứng chỉ số, giám sát hoạt động.</li><li style=\"margin-bottom:10px\">🏘️ <strong>Tổ chức Cấp Quận/Huyện:</strong> Nhánh trung gian quản lý và thống kê (nếu có).</li><li style=\"margin-bottom:10px\">🥋 <strong>Câu Lạc Bộ / Võ Đường:</strong> Phân bổ nguồn lực trực tiếp, chấm chuyên cần, quản lý tài chính và kỳ thi.</li><li style=\"margin-bottom:10px\">👤 <strong>VĐV / Học Viên cá nhân:</strong> Hồ sơ huấn luyện trọn đời, theo dõi thành tích, cập nhật thông tin y tế.</li></ul><p style=\"margin-top:20px;\">Chỉ một nút chạm trên VCT Command Center, sức mạnh từ Trung ương sẽ len lỏi xuyên suốt tới cấp cơ sở không một rào cản.</p><p style=\"margin-top:20px;\">👉 <strong><a href=\"/giai-phap/lien-doan\" style=\"color:var(--cyan-accent);\">Trải nghiệm Quản trị Hệ sinh thái Toàn diện</a></strong></p>"
+  },
+  {
     "id": "dong-so-danh-sach-giai-tu-dong",
     "title": "[Tính năng] Đóng sổ giải tự động: Rà soát cân nặng đến tổng hợp lệ phí trong 1 nốt nhạc",
     "summary": "Thức trắng đêm dò từng dòng file Excel, gọi điện giục lệ phí, sai lệch hạng cân... VCT Platform tự động hóa giải quyết rủi ro với tính năng 1-Click đóng sổ.",
