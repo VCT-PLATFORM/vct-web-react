@@ -1,5 +1,14 @@
 [
   {
+    "id": "giai-dau-chuyen-nghiep-bat-dau-tu-he-thong-chuyen-nghiep",
+    "title": "[Góc Nhìn] Giải đấu chuyên nghiệp bắt đầu từ một hệ thống quản lý chuyên nghiệp",
+    "summary": "Chúng ta thường khen ngợi những trận đấu mãn nhãn, nhưng thành bại của một giải đấu được quyết định từ hậu trường: hệ thống quản lý.",
+    "thumbnail": "/assets/images/vct_professional_tournament_quote.png",
+    "date": "09/04/2026",
+    "author": "Giám đốc Vận hành (Jen)",
+    "content": "<p><strong>\"Giải đấu chuyên nghiệp bắt đầu từ một hệ thống quản lý chuyên nghiệp.\"</strong> 🏆🥋</p><p>Chúng ta thường khen ngợi những trận đấu mãn nhãn hay kỹ thuật đỉnh cao trên thảm, nhưng những người làm nghề hiểu rõ: Thành bại của một giải đấu thiết yếu bắt nguồn từ hậu trường.</p><ul><li style=\"margin-bottom:10px\">🔹 Bạn đã từng ngao ngán chứng kiến cảnh lộn xộn quanh bàn thư ký chỉ để xem màn hình điểm số?</li><li style=\"margin-bottom:10px\">🔹 Hay trải qua cảm giác VĐV của mình chờ ròng rã cả buổi vì lịch thi đấu bằng giấy liên tục bị gạch xóa, điều chỉnh?</li><li style=\"margin-bottom:10px\">🔹 Và sự mệt mỏi của các Trưởng đoàn khi phải lo lắng kiểm định lại hạng cân bị sai lệch phút chót?</li></ul><p>Sự lộn xộn trong khâu tổ chức không chỉ bào mòn thể lực của VĐV mà còn làm giảm sút trực tiếp uy tín của toàn giải.</p><h3 class=\"text-cyan\" style=\"margin-bottom:20px; font-size: 1.5rem; margin-top:20px;\">VCT Platform: Chuẩn Mực Giải Đấu 3.0</h3><p>Với VCT Platform, một giải đấu chuẩn chuyên nghiệp không phải là điều xa vời:</p><ul><li style=\"margin-bottom:10px\">✅ <strong>Tạm biệt \"lịch thi đấu dán tường\":</strong> Trưởng đoàn và VĐV tra cứu nhánh đấu, số thảm thi đấu ngay trên chiếc điện thoại cá nhân.</li><li style=\"margin-bottom:10px\">✅ <strong>Trải nghiệm Real-time Scoring:</strong> Điểm số được bắn trực tiếp từ bàn thư ký lên màn hình và thiết bị khán giả, đảm bảo tính minh bạch tuyệt đối.</li><li style=\"margin-bottom:10px\">✅ <strong>Quy trình \"1 Click\":</strong> Từ duyệt cân nặng đến phân lịch đấu, mọi thao tác chạy hoàn toàn tự động, giải phóng triệt để nhân sự nghiệp vụ.</li></ul><p>Để nâng tầm một đấu trường, điều bạn cần không phải là tăng thêm nhân viên, mà là áp dụng đúng hệ thống. Ban Tổ Chức và Liên Đoàn đã sẵn sàng kiến tạo những giải đấu chuẩn mực 3.0?</p><p style=\"margin-top:20px;\">👉 <strong><a href=\"/giai-phap/giai-dau\" style=\"color:var(--cyan-accent);\">Khám phá VCT Tournament Engine</a></strong></p>"
+  },
+  {
     "id": "he-sinh-thai-du-lieu-lien-doan",
     "title": "Hệ sinh thái dữ liệu Liên đoàn VCT - Bản lề cho Kỷ nguyên số hóa",
     "summary": "Bản tóm lược về định hướng lưu trữ vĩnh viễn và cấu trúc tài sản số 5 phân tầng dành cho hệ thống Liên đoàn các cấp.",
