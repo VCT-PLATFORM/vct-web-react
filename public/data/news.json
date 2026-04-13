@@ -1,5 +1,14 @@
 [
   {
+    "id": "bang-thi-dau-dan-tuong-noi-am-anh",
+    "title": "[Góc Nhìn Thực Tế] 'Bảng thi đấu dán tường' — Ai làm giải cũng biết, nhưng chẳng ai muốn nhắc",
+    "summary": "Cứ mỗi lần tổ chức giải, lại là 1 lần lặp lại cơn ác mộng cũ: Gạch xóa bảng đấu, Trưởng đoàn tranh nhau check lịch cho trò... Giải pháp số nào thay thế tờ A0 mong manh?",
+    "thumbnail": "/assets/images/news-day1-paper-vs-digital.png",
+    "date": "14/04/2026",
+    "author": "Ban Chuyên Môn VCT",
+    "content": "<p><strong>\"Bảng thi đấu dán tường\" — Ai làm giải cũng biết, nhưng chẳng ai muốn nhắc.</strong> 📋</p><p>Cứ mỗi lần tổ chức giải, lại là 1 lần lặp lại cơn ác mộng cũ:</p><ul><li style=\"margin-bottom:10px\">😰 In bảng đấu xong, phát hiện VĐV bỏ cuộc → Gạch xóa, viết tay lại.</li><li style=\"margin-bottom:10px\">😰 Trưởng đoàn xếp hàng trước 1 tờ A0 nhăn nhúm để check lịch cho trò.</li><li style=\"margin-bottom:10px\">😰 Khán giả muốn biết con mình đấu lúc nào → \"Cháu xem tờ dán ở cửa nhé\".</li><li style=\"margin-bottom:10px\">😰 3 tờ bảng đấu rải rác, 3 phiên bản khác nhau, không biết cái nào mới nhất.</li></ul><p>Sai sót trên bảng thi đấu không chỉ là \"lỗi nhỏ\". Nó dẫn đến việc VĐV bị xếp sai hạng cân, ảnh hưởng sự công bằng và mệt mỏi thể lực. Không chỉ vậy, cha mẹ mất niềm tin vào ban tổ chức và uy tín giải đấu bị đánh giá \"nghiệp dư\".</p><h3 class=\"text-cyan\" style=\"margin-bottom:20px; font-size: 1.5rem; margin-top:20px;\">Đã đến lúc chuyển mình sang Kỷ nguyên Số</h3><p>Thời đại 2026 rồi. Huấn luyện viên tra Google để dạy kỹ thuật. Vận động viên quay slowmo bằng điện thoại để phân tích đối thủ. Nhưng đáng buồn là Ban tổ chức vẫn đang... dán bảng đấu bằng băng keo lên tường?</p><p><strong>VCT Platform</strong> sinh ra để giải quyết chính xác nỗi đau này:</p><ul><li style=\"margin-bottom:10px\">✅ Tính năng <strong>Nhánh đấu Digital</strong>, tự động cập nhật và phân nhánh lại khi có biến động.</li><li style=\"margin-bottom:10px\">✅ Trưởng đoàn & VĐV tra cứu lịch đấu ngay trên màn hình điện thoại cá nhân (Real-time).</li><li style=\"margin-bottom:10px\">✅ Duy trì Một nguồn thông tin duy nhất, chính xác 100%, tạo nên sự chuyên nghiệp cho toàn giải đấu.</li></ul><p style=\"margin-top:20px;\">👉 <strong><a href=\"/giai-phap/giai-dau\" style=\"color:var(--cyan-accent);\">Nâng cấp giải đấu của bạn ngay hôm nay cùng VCT Tournament Engine</a></strong></p>"
+  },
+  {
     "id": "giai-dau-chuyen-nghiep-bat-dau-tu-he-thong-chuyen-nghiep",
     "title": "[Góc Nhìn] Giải đấu chuyên nghiệp bắt đầu từ một hệ thống quản lý chuyên nghiệp",
     "summary": "Chúng ta thường khen ngợi những trận đấu mãn nhãn, nhưng thành bại của một giải đấu được quyết định từ hậu trường: hệ thống quản lý.",
