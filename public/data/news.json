@@ -1,5 +1,14 @@
 [
   {
+    "id": "tranh-cai-diem-so-giai-dau",
+    "title": "TRANH CÃI ĐIỂM SỐ - NỖI ÁM ẢNH TẠI CÁC GIẢI ĐẤU VÕ THUẬT!",
+    "summary": "Trọng tài bấm nhầm, bảng điểm lật sai... Việc ghi chép bằng tay tạo sự hoài nghi. Giải pháp Bảng điểm điện tử của VCT sẽ chấm dứt kỷ nguyên cãi vã ngay hôm nay.",
+    "thumbnail": "/assets/images/news-day4-scoreboard.png",
+    "date": "17/04/2026",
+    "author": "Ban Chuyên Môn VCT",
+    "content": "<p>\"Trọng tài bấm nhầm!\", \"Bảng điểm lật sai rồi!\"... là những tiếng phàn nàn quá đỗi quen thuộc tại các giải đấu phong trào. Việc ghi chép điểm số bằng tay hoặc bằng bảng giấy lật truyền thống không chỉ dễ xảy ra rủi ro sai sót nhỏ, mà còn tạo ra sự hoài nghi to lớn cho Vận động viên và Huấn luyện viên.</p><p>Trong những khoảnh khắc ép cân khắc nghiệt và thi đấu căng thẳng nhất, mọi sự mập mờ đều dễ dẫn đến khiếu nại, cãi vã, làm sứt mẻ tinh thần thể thao thượng võ.</p><h3 class=\"text-cyan\" style=\"margin-bottom:20px; font-size: 1.5rem; margin-top:20px;\">Giải pháp đột phá từ VCT PLATFORM: BẢNG ĐIỂM ĐIỆN TỬ & LƯU VẾT MINH BẠCH!</h3><ul><li style=\"margin-bottom:10px\">✅ <strong>Tốc độ thời gian thực:</strong> Mọi cú đánh ghi điểm của trọng tài đều được đồng bộ ngay lập tức và hiển thị rực rỡ trên màn hình lớn của nhà thi đấu.</li><li style=\"margin-bottom:10px\">✅ <strong>Lưu vết từng giây:</strong> Hệ thống lưu trữ (Audit log) ghi lại chính xác tuyệt đối thời gian và danh tính trọng tài đã thao tác chạm chạm. Không còn tình trạng \"điểm số rơi từ trên trời xuống\".</li><li style=\"margin-bottom:10px\">✅ <strong>Hình ảnh Chuyên nghiệp:</strong> Giúp VĐV yên tâm cống hiến 100% sức lực, giúp Ban Tổ Chức tự hào nâng hạng xưng danh giải đấu.</li></ul><p>Hãy chấm dứt kỷ nguyên cãi vã điểm số và mang lại sự công bằng tuyệt đối cho sàn đấu ngay hôm nay!</p><p style=\"margin-top:20px;\">👉 <strong><a href=\"/giai-phap/giai-dau\" style=\"color:var(--cyan-accent);\">Nâng cấp giải đấu của bạn cùng VCT Tournament Engine</a></strong></p>"
+  },
+  {
     "id": "so-hoa-vo-duong-clb-2026",
     "title": "[Góc Nhìn Quản Trị] Võ đường của bạn đang quản lý võ sinh bằng sổ tay hay nền tảng số?",
     "summary": "Hơn 1.200+ CLB Võ Cổ Truyền đang đối mặt khó khăn chung: sổ giấy thất lạc, lệ phí thủ công, hồ sơ thi đấu tốn hàng tuần. VCT Platform mang đến giải pháp số hóa All-in-One.",
