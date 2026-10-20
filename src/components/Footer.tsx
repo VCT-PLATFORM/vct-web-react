@@ -37,8 +37,8 @@ const Footer: React.FC = () => {
           <div className="footer-links-col reveal" style={{transitionDelay:'200ms'}}>
             <h4 className="footer-title">{t('ft_col3_title')}</h4>
             <ul className="footer-links">
-              <li><Link to="/chinh-sach/bao-mat"><i className="fas fa-shield-alt" style={{marginRight:'8px',fontSize:'0.8rem',color:'var(--cyan-accent)'}}></i><span>{t('ft_pol_privacy')}</span></Link></li>
-              <li><Link to="/chinh-sach/dieu-khoan"><i className="fas fa-file-contract" style={{marginRight:'8px',fontSize:'0.8rem',color:'var(--cyan-accent)'}}></i><span>{t('ft_pol_terms')}</span></Link></li>
+              <li><Link to="/privacy"><i className="fas fa-shield-alt" style={{marginRight:'8px',fontSize:'0.8rem',color:'var(--cyan-accent)'}}></i><span>{t('ft_pol_privacy')}</span></Link></li>
+              <li><Link to="/terms"><i className="fas fa-file-contract" style={{marginRight:'8px',fontSize:'0.8rem',color:'var(--cyan-accent)'}}></i><span>{t('ft_pol_terms')}</span></Link></li>
               <li><Link to="/ve-chung-toi"><i className="fas fa-globe" style={{marginRight:'8px',fontSize:'0.8rem',color:'var(--cyan-accent)'}}></i><span>{t('ft_pol_about')}</span></Link></li>
             </ul>
           </div>

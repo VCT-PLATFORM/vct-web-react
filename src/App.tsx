@@ -71,6 +71,10 @@ const App: React.FC = () => {
         <Route path="/giai-phap/giai-dau" element={<SolutionGiaiDau />} />
         <Route path="/bang-gia" element={<Pricing />} />
         <Route path="/tin-tuc" element={<News />} />
+        <Route path="/privacy" element={<PrivacyPolicy />} />
+        <Route path="/privacy-policy" element={<PrivacyPolicy />} />
+        <Route path="/terms" element={<TermsOfService />} />
+        <Route path="/terms-of-service" element={<TermsOfService />} />
         <Route path="/chinh-sach/bao-mat" element={<PrivacyPolicy />} />
         <Route path="/chinh-sach/dieu-khoan" element={<TermsOfService />} />
         <Route path="/tin-tuc/bai-viet" element={<NewsArticle />} />
